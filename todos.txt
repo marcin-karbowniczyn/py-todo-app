@@ -1,0 +1,5 @@
+throw
+clean
+show pictures
+edit video
+prepare
