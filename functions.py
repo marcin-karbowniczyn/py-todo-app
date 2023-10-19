@@ -17,7 +17,6 @@ def write_todos(todos_arg, filepath=FILEPATH):
         file_local.writelines(todos_arg)
 
 
-print('Hello from functions. This proves that functions module/script is executed when it is imported in the main.py')
 # W taki sposób ukrywamy ten print() w main.py
 if __name__ == "__main__":
     print(get_todos())
