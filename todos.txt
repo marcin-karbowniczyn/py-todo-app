@@ -1,7 +1,2 @@
 throw
-clean
-show pictures
-edit video
-prepare
-
-Do something
+Clean the programdupa1My newest added todo
