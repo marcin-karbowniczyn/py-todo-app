@@ -1,4 +1,4 @@
-FILEPATH = 'todos.txt'  # Tak zapisujemy stałe zmienne w modułach, można je później przejrzeć za pompcą funkcji dir(), np. dir(functions)
+FILEPATH = 'todos.txt'  # Tak zapisujemy zmienne w modułach, można je później przejrzeć za pompcą funkcji dir(), np. dir(functions)
 
 
 # Filepath w definicji to parameter, a przy wywoływaniu funkcji to argument.
