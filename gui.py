@@ -30,16 +30,18 @@ while True:
             todos = functions.get_todos()
             todos.append(values['todo_input_box'] + '\n')
             functions.write_todos(todos)
+
             window['todosList'].update(values=todos)
+            window['todo_input_box'].update(value='')
             continue
 
         case 'todosList':
-            window['todo_input_box'].update(value=values['todosList'][0])
+            window['todo_input_box'].update(value=values['todosList'][0].replace('\n', ''))
             continue
 
         case 'Edit':
             todo_to_edit = values['todosList'][0]
-            new_todo = values['todo_input_box']
+            new_todo = values['todo_input_box'] + '\n'
             todos = functions.get_todos()
             todo_to_edit_index = todos.index(todo_to_edit)
             todos[todo_to_edit_index] = new_todo
@@ -47,9 +49,11 @@ while True:
 
             # Wszystkie elementy są zapisane na obiekcie window i w taki sposób mamy do nich dostęp
             window['todosList'].update(values=todos)
+            window['todo_input_box'].update(value='')
             continue
 
         case sg.WIN_CLOSED:
             break
 
+print('Bye')
 window.close()
