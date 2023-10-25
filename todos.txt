@@ -1,4 +1,4 @@
-New clean the house
-Prepare a meal
+Do something
+Prepare a meal 2
 Do the dishes
-Clean the car
+Learn Python
