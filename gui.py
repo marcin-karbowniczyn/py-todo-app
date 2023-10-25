@@ -1,6 +1,12 @@
 import time
+import os
 import functions
 import PySimpleGUI as sg
+
+if not os.path.exists('todos.txt'):
+    with open('todos.txt', 'w') as file:
+        # Możemy używać keyworda "pass" kiedy mamy kod w którym linijka musi być zapisana, ale nie potrzebujemy nic zapisywać. Lub jako placeholder
+        pass
 
 sg.theme('DarkGreen2')
 # Ta metoda tworzy text instances/label instances
