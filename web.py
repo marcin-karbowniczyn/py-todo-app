@@ -3,8 +3,6 @@ import functions
 import os
 import random
 
-print('            a     aa      a              '.strip())
-
 if not os.path.exists('todos.txt'):
     with open('todos.txt', 'w') as file:
         pass
