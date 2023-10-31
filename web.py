@@ -16,6 +16,9 @@ def add_todo(user_input_local):
     functions.write_todos(todos)
 
 
+# Tak możemy konfigurować stronę
+# st.set_page_config(layout='wide')
+
 st.title('My Todo App')
 
 for index, todo in enumerate(todos):
